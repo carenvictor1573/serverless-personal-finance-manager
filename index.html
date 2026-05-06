@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Create Account</h2>
+
+  <input id="signupEmail" placeholder="Email" />
+  <input id="signupPassword" type="password" placeholder="Password" />
+
+  <button onclick="signup()">Sign Up</button>
+
+  <input id="confirmCode" placeholder="Verification Code" />
+  <button onclick="confirmSignup()">Confirm Email</button>
+</div>
+
+
+<div class="container">
+    <h2>Personal Finance Manager</h2>
+
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="login(
+        email.value,
+        password.value
+    )">Login</button>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

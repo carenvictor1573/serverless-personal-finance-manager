@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div class="nav">
+    <a href="add.html">Add Transaction</a>
+    <a href="transactions.html">View Transactions</a>
+    <a href="#" onclick="logout()">Logout</a>
+</div>
+
+<!-- Main dashboard card -->
+<div class="card">
+    <h2>Welcome 👋</h2>
+    <p>Manage your income & expenses easily.</p>
+</div>
+
+<!-- Auth logic -->
+<script src="js/auth.js"></script>
+
+<script>
+    // 🔐 Protect dashboard page
+    const user = localStorage.getItem("user");
+    const token = localStorage.getItem("idToken");
+
+    if (!user || !token) {
+        alert("Please login first");
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+</html>
