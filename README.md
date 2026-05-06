@@ -96,20 +96,65 @@ finance-manager/
 
 # 📸 Application Screens
 
-## Login & Signup
-Users can securely create accounts and log in.
+## 🔐 Login & Signup
 
-## Dashboard
-Central navigation for finance management.
+![Login Page](screenshots/login.png.jpeg)
 
-## Add Transaction
-Allows users to add income or expense details.
+---
 
-## Transaction History
-Displays all transactions in a formatted layout.
+## 🏠 Dashboard
 
-## Balance Summary
-Shows total income, expenses, and remaining balance.
+![Dashboard](screenshots/dashboard.png.jpeg)
+
+---
+
+## ➕ Add Income Transaction
+
+![Add Income](screenshots/add-transaction1.png.jpeg)
+
+---
+
+## ➖ Add Expense Transaction
+
+![Add Expense](screenshots/add-transaction2.png.jpeg)
+
+---
+
+## 📋 Transactions History
+
+![Transactions](screenshots/transactions.png.jpeg)
+
+---
+
+## 💰 Balance Summary
+
+![Balance](screenshots/balance.png.jpeg)
+
+---
+
+# ☁️ AWS Architecture & Services
+
+## 🗄️ DynamoDB Table
+
+The application stores user transactions securely in Amazon DynamoDB.
+
+![DynamoDB](screenshots/dynamodb.png.jpeg)
+
+---
+
+## 🌐 API Gateway Configuration
+
+Amazon API Gateway is used to expose backend APIs for transaction operations.
+
+![API Gateway](screenshots/api.png.jpeg)
+
+---
+
+## 📦 Amazon S3 Static Website Hosting
+
+Frontend files are hosted using Amazon S3 Static Website Hosting.
+
+![S3 Static Hosting](screenshots/static.png.jpeg)
 
 ---
 
